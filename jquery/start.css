@@ -1,0 +1,125 @@
+body{
+    /* background: azure; */
+    top:0;
+    margin: 0;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: left; 
+    background: rgb(238, 133, 133);
+    height: 50px;
+    padding-left: 75px;
+    z-index: 15;
+}
+
+header img{
+    height: 50px;
+    width: 50px;
+}
+header button{
+    margin-left:25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    background: rgb(238, 133, 133);
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: "Georgia";
+    border-left: 2px solid rgb(122, 30, 30);
+    border-radius: 10px;
+    
+}
+ul{
+    list-style-type: none;
+    
+}
+li{
+    display: inline;
+    padding-right: 25px;
+}
+.small{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px !important; 
+}
+article{
+    margin: 20px 12% !important;
+    font-size: 17px;
+    font-family: Arial;
+}
+article p{
+    
+    text-indent: 15px;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+    /* margin: 20px 15%; */
+}
+.content *{
+    margin: 10px auto;
+}
+.content img{
+    border-radius: 45px;
+}
+.content div{
+    margin: 5px 15%;
+    display: flex;
+    /* justify-content: center; */
+    text-align: left;
+}
+.red{
+    color:rgb(194, 63, 63);;
+}
+table{
+    font-family: 'HaginCaps';
+    font-size: 20px;
+    border-spacing: 50px 12px;
+    text-transform: uppercase;
+    /* border: 1px solid black; */
+}
+
+
+h1{
+    font-size: 50px;
+    font-family: gabriola;
+    background-color: white;
+    z-index: 2;
+}
+
+.pod{
+    position: absolute;
+    display: block;
+    content: '';
+    left: 100px;
+    right: 100px;
+    top: 120px;
+    z-index: 1;
+    border-top: 2px solid rgb(238, 133, 133);;
+}
+.up{
+    position: fixed;
+    top:0px;
+    bottom: 0;
+    width: 60px;
+    background-color: white;
+    border: none;
+    z-index: 4;
+}
+.up span{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Винник - пісні</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="upload.css" />
+    <script src="clock.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="./src/images/v.png" alt="logo"/>
+        <a href="./index.html">
+            <button id ="about">Про Олега Винника</button>
+        </a>
+            <a href="./lyrics.html">
+            <button id ="lyrics">Тексти пісень Винника</button>
+        </a>
+        <a href = "upload.html">
+            <button id ="upload">Пісні</button>
+        </a>
+    </header>
+    <button class="up" onclick="scroll_to_top()">
+        <span>Нагору↑</span>    
+    </button>
+    <div class= "content">
+        <div>
+            <section id = "drop-zone" ondragover = "dragOverHandler(event);" ondrop="dropHandler(event);">
+              Перетащите файл сюда...
+            </section>               
+        <div id = "drop-info" ></div> 
+        <div id = "thumbnails-zone">
+            <img src = "" class = "thumb">
+        </div>    
+        </div>
+        <form onsubmit="return false;" >
+            <input id = "choose-file" type = "file"  multiple onchange="uploadFile()" >
+            <input id = "reset" type="reset" class = "none">
+        </form>
+        <div class = "flex">
+            <div>Намалюйте Лолега Винника</div>
+            <input type="color"  class="js-color-picker">
+            <div class = "inline">
+                <input type="range" class="js-line-range" min="1" max="72" value="1">
+                <label class="js-range-value">1</label>Px
+            </div>
+            <canvas class="js-paint  paint-canvas" width="250px" height="250px"></canvas>
+        </div>
+        <div class="flex-row ">
+        <div class = "flex">
+            <form class = "sent" onsubmit="return bestSong();">
+ 
+                <div>Ваш e-mail:<input type =  "email" id = "email"></div>
+                <!-- <div>Ваш логин:<input type = "text"></div> -->
+                <div>Дата рождения<input type="date" id = "birth"></div>
+
+                <div class="fav">Ваша любимая песня Винника:</div>
+                <div>
+                    <div><input type = "radio" name ="song" value = "Счастье">Счастье</div>
+                    <div><input type = "radio" name ="song" value = "Нино">Нино</div>
+                    <div><input type = "radio" name ="song" value = "Волчица">Волчица</div>
+                </div>
+                <input type = "submit" value = "сохранить">
+            </form>
+        </div>
+        <div class = "left">
+            <form class = "sent" onsubmit="return showSong();">
+                <div>Посмотреть любимую свою песню</div>
+                <div>Ваш e-mail: <input type="email" id = "checkemail"></div>
+                <input type = "submit" value = "Посмотреть">
+            </form>
+        </div>
+        </div>
+        <div>
+            <form name="upload">
+                <input type="file" name="myfile">
+                <input type="submit" value="Загрузить">
+            </form>
+            <div id="log">Прогресс загрузки</div>
+        </div>
+    </div>
+
+    
+    <canvas id = "clock" width=150 height=150 class="draggable"></canvas>
+    <script src="draw.js"></script>
+    <!-- <img src = "https://js.cx/clipart/ball.svg" id ="ball"> -->
+    <script src="upload.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+body{
+    /* background: azure; */
+    top:0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: left; 
+    background: rgb(238, 133, 133);
+    height: 50px;
+    padding-left: 75px;
+    z-index: 15;
+}
+
+header img{
+    height: 50px;
+    width: 50px;
+}
+header button{
+    margin-left:25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    background: rgb(238, 133, 133);
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: "Georgia";
+    border-left: 2px solid rgb(122, 30, 30);
+    border-radius: 10px;
+    
+}
+
+.content{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin:  auto; */
+    /* margin: 20px 15%; */
+    margin-top: 100px;
+}
+.red{
+    color:rgb(194, 63, 63);
+    font-size: 25px;
+    font-family: gabriola;
+    font-weight: bold;
+}
+.content div{
+    /* margin: 0 15%;  */
+    display: flex;
+    /* justify-content: center; */
+    text-align: left;
+    
+}
+.up{
+    position: fixed;
+    top:0px;
+    bottom: 0;
+    width: 60px;
+    background-color: white;
+    border: none;
+    z-index: 4;
+}
+.up span{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+.content button{
+    background: white;
+    border: 0px;
+}
+.hidden{
+    visibility: hidden;
+}
+form * {
+    margin: 5px auto;
+    text-align: center;
+}
+#drop-zone{
+    border: 3px dashed black;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    /* margin-left: 100px; */
+}
+#drop-info {
+    display:flex;
+    flex-direction: column;
+}
+#drop-info p{
+    margin-left:25px; 
+    margin-top:0; 
+
+}
+.inline {
+    display: inline-block;
+    align-content: center;
+}
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
+.left{
+    left:0;
+}
+input{
+    margin-top: 15px;
+}
+.small{
+    margin-left: 50px;
+    width:100px;
+    height: 100px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+#clock{
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+}
+.js-paint{
+    width: 250px;
+    height: 250px;
+    border: 3px double black;
+}
+.sent input {
+    margin: 0;
+    margin-left:5px;
+}
+.js-line-range{
+    width: 200px
+}
+.fav div{
+    display: block;
+    /* flex-direction: row; */
+}
+.left{
+    margin-left: 100px;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+#ball{
+    margin-left: 250px;
+}

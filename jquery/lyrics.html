@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Олег Винник - Тексти пісень</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="lyrics.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- <script src = "loleg.js"></script> -->
+</head>
+<body>
+    <header>
+        <img src="./src/images/v.png" alt="logo"/>
+        <a href="./index.html">
+            <button id ="about">Про Олега Винника</button>
+        </a>
+            <a href="./lyrics.html">
+            <button id ="lyrics">Тексти пісень Винника</button>
+        </a>
+        <a href = "upload.html">
+            <button id ="upload">Пісні</button>
+        </a>
+    </header>
+    <button class="up" onclick="scroll_to_top()">
+        <span>Нагору↑</span>    
+    </button>
+    <div class= "content">
+        <div class="name">
+            <button class = "happiness red" onclick="showLyrics('happiness')">
+                Счастье
+            </button>
+        </div>
+        <div class = "hidden" id = "happiness">
+            
+        </div>
+        <div class="name">
+            <button class = "nino red" onclick="showLyrics('nino')">
+                Нино
+            </button>
+        </div>
+        <div class = "hidden" id = "nino"></div>
+        <div class="name">
+                <button class = "wolf red" onclick="showLyrics('wolf')">
+                    Вовчиця
+                </button>
+            </div>
+            <div class = "hidden" id = "wolf"></div>
+        <div>
+                <div>
+                    <span id = "f_n"></span>
+                    <span id = "f_d"></span>
+                    <a href=""><span id = "f_r"></span></a>
+                </div>
+                <div>
+                    <span id = "s_n"></span>
+                    <span id = "s_d"></span>
+                    <a href=""><span id = "s_r"></span></a>
+                </div>
+                <div>
+                    <span id = "t_n"></span>
+                    <span id = "t_d"></span>
+                    <a href=""><span id = "t_r"></span></a>
+                </div>
+            </div>
+    </div>
+    <img class = "small hidden" id = "loleg" src = "./src/images/loleg.png" alt = "memchik">
+    
+    <script src="lyrics.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
