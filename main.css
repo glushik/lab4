@@ -1,0 +1,70 @@
+.cat {
+    animation: walk-cycle 1s steps(12) infinite;
+    background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+    height: 200px;
+    width: 400px;
+    margin: 100px auto 0;
+  }
+  
+  @keyframes walk-cycle {  
+    0% {background-position: 0 0; } 
+    100% {background-position: 0 -2391px; } /* Must be full height of sprite or skipping will happen.*/
+  }
+
+.hidden{
+  display: none;
+}
+
+  
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  }
+
+  body {
+    background-color: white;
+    text-align: left;
+    /*font-family: 'Viga', sans-serif;*/
+    font-family: 'Space Mono', monospace;
+    font-size: 3.6em;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+
+* { 
+	color: black; 
+  text-decoration: none;
+  
+}
+
+h1 {
+	margin-top: 0;
+	font-weight: 100;
+}
+
+@media handheld,
+only screen and (max-width: 767px) {
+	
+body {
+		font-size: 1.3em;
+	}
+	
+}
+
+button{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 250px;
+  height: 50px;
+  margin-left: 40%;
+}
+#oleg{
+  position: absolute;
+  left: 0;
+  top:0;
+  /* margin: 0 auto; */
+  height: 250px;
+  width: 250px;
+}

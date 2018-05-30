@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+<body>
+    <button onclick = "showAnimation();" id = "sh">Запустить анимацию</button>
+    <canvas class ="hidden"></canvas>
+    <div id = "typ">
+        <p class="typewrite" data-period="1000" 
+            data-type='[ "Приготовтесь","Скоро появится лучший из лучших", "ОЛЕГ ВИНИК" ]'>      
+          <span class="wrap"></span>
+    </p>
+    </div>
+    <img src = "https://shoubiz.guru/wp-content/auploads/513179/oleg_vinnik_pevec.jpg" alt ="loleg" id = "oleg" class = "hidden">
+    <div class = "cat hidden"></div>
+    <script src="main.js"></script>
+    <script src="buble.js"></script>
+    <script src="typing.js"></script>
+</body>
+
+</html>
