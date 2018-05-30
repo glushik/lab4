@@ -62,9 +62,9 @@ button{
 }
 #oleg{
   position: absolute;
-  left: 0;
-  top:0;
+  left: 50%;
+  top:  50%;
   /* margin: 0 auto; */
-  height: 250px;
-  width: 250px;
+  height: 0px;
+  width: 0px;
 }
