@@ -1,9 +1,0 @@
-language: generic
-deploy:
-  provider: s3
-  access_key_id: AKIAI7FVPLJBUEWDKRLQ
-  secret_access_key: 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
-  bucket: jquerylab4
-  on:
-    repo: glushik/lab4
-  acl: public_read
